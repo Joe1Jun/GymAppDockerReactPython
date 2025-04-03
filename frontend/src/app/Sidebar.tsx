@@ -1,7 +1,9 @@
 import { styled } from '@mui/system';
-import { Box, IconButton, Typography } from '@mui/material';
+import { Box,  ListItemIcon, List } from '@mui/material';
+import { ListButtonStyled } from '../components/ListButtonStyled';
+import { sidebarItems } from '../utils/sideBarItems';
 
-import TimerIcon from '@mui/icons-material/Timer';
+
 
 
 
@@ -10,6 +12,9 @@ import TimerIcon from '@mui/icons-material/Timer';
 const SideBarContainer = styled(Box)({
  
     minHeight: '100vh',
+    display : "flex",
+    flexDirection : "column",
+  
     color : "gray",
     position: 'fixed',
     top: 0,
@@ -27,8 +32,20 @@ const Sidebar : React.FC = ( ) => {
 
     return(
       <SideBarContainer>
-        <TimerIcon></TimerIcon>
-        <IconButton></IconButton>
+       
+        
+        
+        {sidebarItems.map((item, index) => (
+         <List key={index}>   
+         <ListButtonStyled>
+            <ListItemIcon>
+                {item.icon}
+            </ListItemIcon>
+          
+         </ListButtonStyled>
+         </List>
+       ))}
+         
 
       </SideBarContainer>
 

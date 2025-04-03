@@ -6,7 +6,8 @@ const HeaderStyled = styled(Box)({
     color: 'darkslategray',
     backgroundColor: 'aliceblue',
     display : "flex",
-   
+    top: 0,
+    left: 0,
     width : "100%",
     padding : "20px",
     borderRadius: 4,

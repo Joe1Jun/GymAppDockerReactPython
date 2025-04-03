@@ -1,7 +1,7 @@
 import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
 import ShowChartIcon from '@mui/icons-material/ShowChart';
 import SettingsIcon from '@mui/icons-material/Settings';
-
+import TimerIcon from '@mui/icons-material/Timer';
 
 export const sidebarItems = [
 
@@ -19,7 +19,10 @@ icon : <SettingsIcon />,
 path : "/settings"
 
 },
-
+{
+   icon :  <TimerIcon />,
+   path : "/"
+}
 
 
 
