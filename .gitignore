@@ -1,2 +1,38 @@
 .qodo
+# Environment files
 .env
+frontend/.env.local
+backend/.env
+
+# Node.js dependencies
+frontend/node_modules/
+frontend/.next/
+frontend/dist/
+node_modules/
+npm-debug.log*
+yarn.lock
+package-lock.json
+
+# Python dependencies
+backend/__pycache__/
+backend/venv/
+**/__pycache__/
+**/*.pyc
+
+# Ignore built frontend files (if built locally)
+frontend/build/
+dist/
+
+# Docker artifacts
+docker-compose.override.yml
+*.log
+tmp/
+.cache/
+logs/
+
+# VS Code settings
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
