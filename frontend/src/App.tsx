@@ -12,6 +12,7 @@ import './App.css'
 
 
 const AppContainer = styled(Box)({
+  
   display: 'flex',
   height: '100vh',
   width: '100%',

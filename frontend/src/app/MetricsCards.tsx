@@ -17,12 +17,13 @@ const CardsContainer = styled(Box)({
     
   });
 
-  const CardStyled = styled(Card) ({
-    
-    borderRadius : "8px"
-
-
-  })
+  const CardStyled = styled(Card)(({ className }) => ({
+    borderRadius: "8px",
+    ...(className === "steps" && { backgroundColor: "#1976d2", color: "#fff" }),
+    ...(className === "water" && { backgroundColor: "#f50057", color: "#fff" }),
+    ...(className === "calories" && { backgroundColor: "#4caf50", color: "#fff" }),
+    ...(className === "heartRate" && { backgroundColor: "#4caf50", color: "#fff" })
+  }));
 
 
 const Cards : React.FC = () => {
@@ -31,7 +32,7 @@ const Cards : React.FC = () => {
 return(
    <CardsContainer>
    {cardItems.map((item) => (
-   <CardStyled key= {item.id} sx={{ maxWidth: "30%", marginRight : "20px", backgroundColor : `${item.color}`}}>
+   <CardStyled className={item.classname} key= {item.id}  sx={{ maxWidth: "30%", marginRight : "20px"}}  >
     
    
    <CardContent>

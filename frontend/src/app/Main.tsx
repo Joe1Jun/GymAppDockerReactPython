@@ -1,12 +1,13 @@
 import { styled } from '@mui/system';
 import {Box, Card} from "@mui/material"
 import Header from './Header';
-import Cards from './Cards';
+import Cards from './MetricsCards';
 
 
 // Main Content Area
 const MainContainer = styled(Box)({
-  flex: 1,
+  display: "flex", // Make it a flex container
+  flexDirection : "column",
   padding: '10px',
   width : "80%",
   overflowY: 'auto',

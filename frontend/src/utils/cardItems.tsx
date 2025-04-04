@@ -9,7 +9,7 @@ export const cardItems = [
     {
      id : 1,   
      title : "Steps",
-     color  : "green",
+     classname  : "steps",
      icon : <DirectionsWalkIcon />,
      path : "/steps-data"
      
@@ -17,7 +17,7 @@ export const cardItems = [
     {
     id : 2,  
     title : "Water",
-    color  : "blue",
+    classname  : "water",
      icon : <WaterDropIcon/>,
      path : "/water-data"
     
@@ -25,7 +25,7 @@ export const cardItems = [
     {
     id : 3,  
     title : "Calories",
-    color  : "teal",
+    classname  : "calories",
     icon : <WhatshotIcon/>,
     path : "/calories-data"
     
@@ -33,7 +33,7 @@ export const cardItems = [
     {
        id : 4, 
        title : "HeartRate", 
-       color  : "yellow",
+       classname  : "heartRate",
        icon :  <FavoriteIcon />,
        path : "/"
     }

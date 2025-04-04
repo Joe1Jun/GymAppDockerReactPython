@@ -4,9 +4,8 @@ import {Box, Typography, Button} from "@mui/material"
 
 const HeaderStyled = styled(Box)({
     color: 'darkslategray',
-    backgroundColor: 'aliceblue',
     display : "flex",
-    justifyContent : "space-between",
+    justifyContent : "space-around",
     width : "100%",
     padding : "20px",
    
