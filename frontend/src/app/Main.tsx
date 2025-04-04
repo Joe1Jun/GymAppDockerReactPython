@@ -1,6 +1,8 @@
 import { styled } from '@mui/system';
 import {Box} from "@mui/material"
 import Header from './Header';
+import Cards from './Cards';
+
 
 // Main Content Area
 const MainContainer = styled(Box)({
