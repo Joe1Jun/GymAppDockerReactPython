@@ -9,22 +9,14 @@ import { sidebarItems } from '../utils/sideBarItems';
 
 
 
+// Left Sidebar
 const SideBarContainer = styled(Box)({
- 
-    minHeight: '100vh',
-    display : "flex",
-    flexDirection : "column",
-  
-    color : "gray",
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    width: "5%",
-    backgroundColor: "whitesmoke",
-    borderRight: `1px solid white`,
-    padding: 10,
-    overflowY: 'auto',
-  
+  width: '5%',
+  height: '100%',
+  backgroundColor: 'white',
+  color: 'gray',
+  padding: '20px',
+  overflowY: 'auto',
 });
 
 const Sidebar : React.FC = ( ) => {
