@@ -2,7 +2,6 @@ import { Card , Box, CardContent,  Typography, CardActions , Button} from "@mui/
 import React from "react";
 import { styled } from '@mui/system';
 import { progressCardItems } from "../utils/progressCardsItems";
-import BasicSelect from "../components/BasicSelect";
 
 
 const CardsContainer = styled(Box)({
@@ -39,17 +38,11 @@ return(
         
        
        <CardContent>
-       <Box sx={{display : "flex", flexDirection : "column"}}>
-
-   
-       <Box sx={{display : "flex" , justifyContent : "space-between"}}>
+    
        <Typography gutterBottom variant="h5" component="div">
            {item.title}
          </Typography>
-         <BasicSelect />  
-
-       </Box>
-       </Box>
+           
          
        </CardContent>
     
