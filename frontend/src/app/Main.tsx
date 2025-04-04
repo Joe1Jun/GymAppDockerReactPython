@@ -17,8 +17,9 @@ const Main : React.FC = ( ) => {
 
     return(
     <MainContainer>
-
+     
     <Header />
+    
     </MainContainer>
 
     )
