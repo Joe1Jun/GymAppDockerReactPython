@@ -1,12 +1,11 @@
 import { Card , Box, CardContent,  Typography, CardActions , Button} from "@mui/material";
 import React from "react";
 import { styled } from '@mui/system';
-import { cardItems } from "../utils/metricsCardItems";
-
+import { progressCardItems } from "../utils/progressCardsItems";
 
 
 const CardsContainer = styled(Box)({
-    
+        
     padding: '10px',
     width : "80%",
     overflowY: 'auto',
@@ -18,6 +17,7 @@ const CardsContainer = styled(Box)({
   });
 
   const CardStyled = styled(Card)(({ className }) => ({
+    boxShadow : "1,0 ,1,0",
     borderRadius: "8px",
     ...(className === "steps" && { backgroundColor: "#1976d2", color: "#fff" }),
     ...(className === "water" && { backgroundColor: "#f50057", color: "#fff" }),
@@ -26,37 +26,34 @@ const CardsContainer = styled(Box)({
   }));
 
 
-const MetricsCards : React.FC = () => {
+const ProgressCards : React.FC = () => {
+
 
 
 return(
-   <CardsContainer>
-   {cardItems.map((item) => (
-   <CardStyled className={item.classname} key= {item.id}  sx={{ maxWidth: "30%", marginRight : "20px"}}  >
-    
-   
-   <CardContent>
 
-   <Typography gutterBottom variant="h5" component="div">
-       {item.title}
-     </Typography>
+    <CardsContainer>
+     {progressCardItems.map((item) => (
+       <CardStyled className={item.classname} key= {item.id}  sx={{ width: "50%", marginRight : "20px", height : "200px"}}  >
+        
        
-     
-   </CardContent>
-   <CardActions>
-     <Button size="small">Share</Button>
-     <Button size="small">Learn More</Button>
-   </CardActions>
- </CardStyled>
+       <CardContent>
+    
+       <Typography gutterBottom variant="h5" component="div">
+           {item.title}
+         </Typography>
+           
+         
+       </CardContent>
+    
+     </CardStyled>
+    
+    
+       ))}
 
+    </CardsContainer>
 
-   ))}
-
-
-
-   </CardsContainer> 
-
-
+    
 
 )
 
@@ -65,9 +62,4 @@ return(
 }
 
 
-
-export default MetricsCards;
-
-
-
-
+export default ProgressCards

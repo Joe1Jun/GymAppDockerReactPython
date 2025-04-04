@@ -2,7 +2,7 @@ import { styled } from '@mui/system';
 import {Box, Card} from "@mui/material"
 import Header from './Header';
 import Cards from './MetricsCards';
-
+import ProgressCards from './ProgressCards';
 
 // Main Content Area
 const MainContainer = styled(Box)({
@@ -24,6 +24,7 @@ const Main : React.FC = ( ) => {
      
     <Header />
     <Cards />
+    <ProgressCards />
     </MainContainer>
 
     )
