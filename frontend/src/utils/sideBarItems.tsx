@@ -6,20 +6,26 @@ import TimerIcon from '@mui/icons-material/Timer';
 export const sidebarItems = [
 
 {
+   id : 1,  
  icon : <DirectionsRunIcon />,
+
  path : "/running-data"
+
 },
 {
+   id : 2,  
  icon : <ShowChartIcon />,
  path : "/overall-data"
 
 },
 {
+   id : 3,  
 icon : <SettingsIcon />,
 path : "/settings"
 
 },
 {
+   id : 4,  
    icon :  <TimerIcon />,
    path : "/"
 }

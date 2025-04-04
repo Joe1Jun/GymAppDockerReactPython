@@ -1,27 +1,40 @@
-import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
-import ShowChartIcon from '@mui/icons-material/ShowChart';
-import SettingsIcon from '@mui/icons-material/Settings';
-import TimerIcon from '@mui/icons-material/Timer';
+import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import WaterDropIcon from '@mui/icons-material/WaterDrop';
+import WhatshotIcon from '@mui/icons-material/Whatshot';
 
 
 export const cardItems = [
 
     {
-     icon : <DirectionsRunIcon />,
-     path : "/running-data"
+     id : 1,   
+     title : "Steps",
+     color  : "green",
+     icon : <DirectionsWalkIcon />,
+     path : "/steps-data"
+     
     },
     {
-     icon : <ShowChartIcon />,
-     path : "/overall-data"
+    id : 2,  
+    title : "Water",
+    color  : "blue",
+     icon : <WaterDropIcon/>,
+     path : "/water-data"
     
     },
     {
-    icon : <SettingsIcon />,
-    path : "/settings"
+    id : 3,  
+    title : "Calories",
+    color  : "teal",
+    icon : <WhatshotIcon/>,
+    path : "/calories-data"
     
     },
     {
-       icon :  <TimerIcon />,
+       id : 4, 
+       title : "HeartRate", 
+       color  : "yellow",
+       icon :  <FavoriteIcon />,
        path : "/"
     }
     
