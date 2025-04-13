@@ -16,7 +16,10 @@ const Login : React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = () => {};
+  const handleLogin = () => {
+
+    
+  };
 
   return (
     <>

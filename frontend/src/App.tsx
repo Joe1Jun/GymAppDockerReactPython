@@ -6,7 +6,7 @@ import { styled } from '@mui/system';
 import {Box} from "@mui/material"
 import Login from './app/Login';
 import DashBoard from './app/Dashboard';
-
+import Register from './app/Register';
 
 
 
@@ -35,6 +35,7 @@ const App : React.FC =() => {
       
       <Routes>
        <Route path="/" element= { <Login />}  /> 
+       <Route path="/register" element={ <Register />} />
        {user &&  <Route path='/dashboard' element = { <DashBoard />} />}
       </Routes>
   
