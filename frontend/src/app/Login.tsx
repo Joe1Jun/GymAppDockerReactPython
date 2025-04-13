@@ -1,4 +1,5 @@
 import { LockOutlined } from "@mui/icons-material";
+import { loginUser } from "../services/apiService";
 import {
   Container,
   CssBaseline,
@@ -16,8 +17,16 @@ const Login : React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = () => {
+  const handleLogin = async () => {
+    try {
 
+      const response = await loginUser(email, password)
+      console.log(response)
+      
+    } catch (error) {
+      
+    }
+    
     
   };
 
