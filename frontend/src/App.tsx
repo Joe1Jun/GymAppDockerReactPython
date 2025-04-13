@@ -1,13 +1,16 @@
 
 
-import Sidebar from './app/Sidebar'
+import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { styled } from '@mui/system';
 import {Box} from "@mui/material"
-import Main from './app/Main';
+import Login from './app/Login';
+import DashBoard from './app/Dashboard';
 
-import UserProfileSidebar from './app/UserProfile';
 
-import './App.css'
+
+
+
 
 
 
@@ -19,22 +22,26 @@ const AppContainer = styled(Box)({
 });
 
 const App : React.FC =() => {
- 
+  const [user, setUser ] = useState<boolean>(false);
 
   return (
    
+
+    
 
 
    
     <AppContainer>
       
-      <Sidebar />
-     <Main />
-   
-    <UserProfileSidebar />
+      <Routes>
+       <Route path="/" element= { <Login />}  /> 
+       {user &&  <Route path='/dashboard' element = { <DashBoard />} />}
+      </Routes>
+  
+     
     
     
-    </AppContainer>
+      </AppContainer>
     
     
   )
