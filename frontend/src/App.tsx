@@ -7,6 +7,7 @@ import {Box} from "@mui/material"
 import Login from './app/Login';
 import DashBoard from './app/Dashboard';
 import Register from './app/Register';
+import HelpPage from './app/HelpPage';
 
 
 
@@ -30,12 +31,13 @@ const App : React.FC =() => {
     
 
 
-   
+   // <Route path="/" element= { <Login />}  /> 
     <AppContainer>
       
       <Routes>
-       <Route path="/" element= { <Login />}  /> 
+       
        <Route path="/register" element={ <Register />} />
+       <Route path= "/"  element={ <HelpPage />}/>
        {user &&  <Route path='/dashboard' element = { <DashBoard />} />}
       </Routes>
   

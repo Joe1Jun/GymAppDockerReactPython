@@ -29,6 +29,12 @@ path : "/settings"
    icon :  <TimerIcon />,
    path : "/"
 }
+,
+{
+   id : 5,  
+   icon :  <TimerIcon />,
+   path : "/helppage"
+}
 
 
 
