@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { 
   Box, 
   Typography, 
@@ -26,7 +26,7 @@ const HelpPage = () => {
   const theme = useTheme();
   const [tabValue, setTabValue] = useState(0);
 
-  const handleTabChange = (event, newValue) => {
+  const handleTabChange = (event : any, newValue : any) => {
     setTabValue(newValue);
   };
 
