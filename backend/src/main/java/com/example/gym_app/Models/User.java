@@ -1,12 +1,10 @@
 package com.example.gym_app.Models;
 
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 
-import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
-import jakarta.persistence.Id;
 
 
 @Entity
@@ -17,6 +15,7 @@ import jakarta.persistence.Id;
 public class User {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String firstName;
