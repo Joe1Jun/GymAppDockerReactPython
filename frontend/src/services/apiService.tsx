@@ -7,7 +7,7 @@ const loginUser = async (email : string, password_hash : string) => {
 
     try {
 
-        const response = await axios.post("http://localhost:5000/login", {
+        const response = await axios.post("http://localhost:8080/users/add-user", {
             email,
             password_hash
 

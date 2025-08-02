@@ -6,6 +6,9 @@ import com.example.gym_app.Repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.net.http.HttpResponse;
+import java.util.Optional;
+
 @Service
 @AllArgsConstructor
 public class UserService {
@@ -22,5 +25,9 @@ public class UserService {
 
     }
 
+    public Optional<User> findUser(String email, String password){
+
+        return userRepository.findByEmailAndPassword(email, password);
+    }
 
 }
